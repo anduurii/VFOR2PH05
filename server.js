@@ -1,22 +1,14 @@
 const express = require('express');
 const path = require('path');
-
-// const HOSTNAME = '127.0.0.1';
+const fs = require('fs');
 
 const app = express();
 const PORT = 3000;
 
 
 
-
-// View Engine Setup
-app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
-
-
-
-
-// CSS og Static Skrár
+app.set('views', path.join(__dirname, 'src', 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
@@ -26,10 +18,11 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Forsíða' });
 });
 
-
-app.get ('/about', (req, res) => {
-    res.render ('about', { title: 'Um Okkur' });
+app.get('/about', (req, res) => {
+    res.render('about', { title: 'Um Okkur' });
 });
+
+
 
 
 // Villumeðhöndlun

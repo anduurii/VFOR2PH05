@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 2rem;
     background-color: #f4f4f4;
 }
 
@@ -22,6 +21,7 @@ header a {
 main {
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
+    margin: 1rem;
 }
 
 section {
