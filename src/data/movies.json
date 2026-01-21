@@ -1,0 +1,23 @@
+[
+  {
+    "id": "interstellar",
+    "title": "Interstellar",
+    "year": 2014,
+    "description": "Hópur könnuða ferðast í gegnum ormagöng í geimnum.",
+    "image": "/images/interstellar.jpg"
+  },
+  {
+    "id": "inception",
+    "title": "Inception",
+    "year": 2010,
+    "description": "Þjófur sem stelar leyndarmálum úr draumum fólks.",
+    "image": "/images/inception.jpg"
+  },
+    {
+    "id": "predator",
+    "title": "Predator",
+    "year": 1988,
+    "description": "Besta hasarmynd sögurnar, allir yfir 16 ára verða að sjá",
+    "image": "/images/predator.jpg"
+  }
+]

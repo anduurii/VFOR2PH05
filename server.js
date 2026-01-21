@@ -13,6 +13,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
+const getTeams = () => {
+    const teams = fs.readFileSync(path.join(__dirname, 'src/data/teams.json'));
+    return JSON.parse(teams);
+}
+
+
 // Slóðir
 app.get('/', (req, res) => {
     res.render('index', { title: 'Forsíða' });
@@ -22,6 +28,13 @@ app.get('/about', (req, res) => {
     res.render('about', { title: 'Um Okkur' });
 });
 
+app.get('/teams', (req, res) => {
+    res.render('teams', { title: 'Teams' });
+});
+
+app.get('/team-details', (req, res) => {
+    res.render('team-details', { title: 'Team details' });
+});
 
 
 

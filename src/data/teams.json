@@ -1,0 +1,20 @@
+[
+    {
+        "id" : "T1",
+        "title" : "T1",
+        "region" : "LCK",
+        "description" : "The most storied LCK organization, synonymous with championship pedigree and legendary players."
+    },
+    {
+        "id" : "GEN.G",
+        "title" : "GEN.G",
+        "region" : "LCK",
+        "description" : "A consistently elite powerhouse known for disciplined play and domestic dominance."
+    },
+    {
+        "id" : "HLE",
+        "title" : "HLE",
+        "region" : "LCK",
+        "description" : "An ambitious contender built around star talents and aggressive roster investments."
+    }
+]
