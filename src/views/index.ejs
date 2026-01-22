@@ -1,19 +1,15 @@
 <%- include('partials/header') %>
 
-<section>
-    <h1 class="title">Velkomin/n!</h1>
-    <p>Velkomin/n til síðuna mína!</p>
-    <p>Þetta er einfaldur efnisgrein</p>
-    <p>og byrjun á VFOR2 áfangann.</p>
-    <p>Ef þú lesur þetta, ertu lúði hahahahahahaha</p>
-</section>
-
-<section>
-    <h2>Dagsetning</h2>
-    <p>Í dag er 15. janúar 2026.</p>
-    <p>Klukkan er 10:13 AM.</p>
-    <p>Eða 13 mínútur yfir 10.</p>
-    <p>Tímabeltið er GMT.</p>
-</section>
+<h1>Vinsælar myndir</h1>
+<div>
+    <% movies.forEach(movie => { %>
+    <div>
+        <img src="<%= movie.image %>" alt="<%= movie.title %>">
+        <h3><%= movie.title %></h3>
+        <p><%= movie.year %></p>
+        <a href="/movie/<%= movie.id %>">Skoða nánar</a>
+    </div>
+    <% }) %>
+</div>
 
 <%- include('partials/footer') %>

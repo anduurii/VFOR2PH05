@@ -1,5 +1,12 @@
 <%- include('partials/header') %>
 
-<p>abc</p>
+<section>
+    <img src="<%= team.image %>" alt="<%= team.title %>">
+    <div>
+        <h1><%= team.title %> (<%= team.region %>)</h1>
+        <p><%= team.description %></p>
+        <a href="/teams">← Til baka</a>
+    </div>
+</section>
 
 <%- include('partials/footer') %>

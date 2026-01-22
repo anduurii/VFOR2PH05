@@ -1,12 +1,15 @@
 <%- include('partials/header') %>
 
-<main>
-    <h1>LCK Teams</h1>
+<h1 class="title">LCK Teams</h1>
+<div>
+    <% teams.forEach(team => { %>
     <div>
-        <% 
-        <a href="/team-details">test</a>
+        <img src="<%= team.image %>" alt="<%= team.title %>">
+        <h3><%= team.title %></h3>
+        <p><%= team.region %></p>
+        <a href="/team/<%= team.id %>">Skoða Nánar</a>
     </div>
-
-</main>
+    <% }) %>
+</div>
 
 <%- include('partials/footer') %>

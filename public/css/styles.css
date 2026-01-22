@@ -33,3 +33,9 @@ section {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
 }
+
+img {
+    padding: 2rem;
+    height: 250px;
+    width: auto;
+}
