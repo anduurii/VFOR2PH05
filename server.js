@@ -7,9 +7,11 @@ const PORT = 3000;
 
 
 
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src', 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 
@@ -27,10 +29,12 @@ const getMovies = () => {
 
 
 // Slóðir
+
 app.get('/', (req, res) => {
     const movies = getMovies();
     res.render('index', { title: 'Bíovefurinn', movies });
 });
+
 
 app.get('/movie/:id', (req, res) => {
   const movies = getMovies();
@@ -44,11 +48,9 @@ app.get('/movie/:id', (req, res) => {
 });
 
 
-
 app.get('/about', (req, res) => {
     res.render('about', { title: 'Um Okkur' });
 });
-
 
 
 app.get('/teams', (req, res) => {
@@ -76,7 +78,6 @@ app.get('/team/:id', (req, res) => {
 app.use((req, res) => {
     res.status(404).send('Síða fannst ekki (404)');
 });
-
 
 
 // Ræsa þjónusta
