@@ -1,0 +1,33 @@
+@use 'variables' as *;
+@use 'base/reset';
+@use 'components/card';
+@use 'components/header';
+
+body {
+    background-color: $primary-color;
+    color: $text-color;
+    font-family: sans-serif;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+main {
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.title {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}

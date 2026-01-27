@@ -1,9 +1,9 @@
 <%- include('partials/header') %>
 
 <h1>Vinsælar myndir</h1>
-<div>
+<div class="card-grid">
     <% movies.forEach(movie => { %>
-    <div>
+    <div class="card">
         <img src="<%= movie.image %>" alt="<%= movie.title %>">
         <h3><%= movie.title %></h3>
         <p><%= movie.year %></p>

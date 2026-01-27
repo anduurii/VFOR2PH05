@@ -1,9 +1,9 @@
 <%- include('partials/header') %>
 
 <h1 class="title">LCK Teams</h1>
-<div>
+<div class="card-grid">
     <% teams.forEach(team => { %>
-    <div>
+    <div class="card">
         <img src="<%= team.image %>" alt="<%= team.title %>">
         <h3><%= team.title %></h3>
         <p><%= team.region %></p>
