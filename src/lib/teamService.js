@@ -12,3 +12,13 @@ const getTeams = () => {
     const teams = loadData();
     return teams;
 };
+
+const getTeamById = (id) => {
+    const teams = loadData();
+    return teams.find((t) => t.id === id);
+};
+
+module.exports = {
+    getTeams,
+    getTeamById
+};
